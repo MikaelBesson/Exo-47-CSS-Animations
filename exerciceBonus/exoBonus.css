@@ -11,14 +11,15 @@
     display: inline-block;
 
     position: relative;
-     width: 50px;
-     height: 50px;
-     left: 10px;
-     border-radius: 100%;
-     border-style: dashed;
-     background-color: blue;
-     animation-name: rotation-roue;
-     animation-duration: 10s;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    border-radius: 100%;
+    border-style: dashed;
+    background-color: blue;
+    animation-name: rotation-roue;
+    animation-duration: 10s;
+    animation-timing-function: linear;
 }
 
 #roue2 {
@@ -32,6 +33,7 @@
     background-color: blue;
     animation-name: rotation-roue;
     animation-duration: 10s;
+    animation-timing-function: linear;
 }
 
 
@@ -40,15 +42,21 @@
     position: absolute;
     animation-name: direction-voiture;
     animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
 
 @keyframes direction-voiture {
-
+    to{
+        transform:translateX(800px);
+    }
 }
 
 @keyframes rotation-roue {
-
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 
@@ -103,10 +111,13 @@
     position: absolute;
     animation-name: nuage;
     animation-duration: 20s;
+    animation-timing-function: ease-in;
 }
 
 
 
 @keyframes nuage {
-
+    to{
+        transform:translateX(800px);
+    }
 }

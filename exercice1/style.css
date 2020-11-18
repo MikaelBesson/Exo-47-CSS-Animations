@@ -44,4 +44,30 @@
     position: absolute;
     left: 500px;
     top: 25px;
+    animation-name : foo-bar;
+    animation-duration : 8s;
+    animation-fill-mode : forwards;
+}
+@keyframes foo-bar {
+    5% {
+        width: 265px;
+        height:265px;
+    }
+    25% {
+        background : orange;
+        width: 150px;
+        height: 150px;
+    }
+    75% {
+        width: 200px;
+        height: 200px;
+        left:5px
+    }
+    100% {
+        width:25px;
+        height : 25px;
+        background : purple;
+        top:50px;
+        left:65px
+    }
 }
