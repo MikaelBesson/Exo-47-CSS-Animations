@@ -16,7 +16,6 @@
     height: 100px;
     left:75px;
     top: 100px;
-    transform-origin: 150px 200px;
 }
 
 #palmeG {
@@ -28,8 +27,7 @@
      left: -70px;
     animation-name: rotHelice;
     animation-duration: 5s;
-
-
+    transform-origin: center center;
 }
 
 #palmeH {
@@ -41,10 +39,12 @@
     left: 117px;
     animation-name: rotHelice;
     animation-duration: 5s;
-
+    transform-origin: center center;
 }
 
 #helice {
+    width: 250px;
+    height: 300px;
     animation-name: rotHelice;
     animation-duration: 5s;
 }
